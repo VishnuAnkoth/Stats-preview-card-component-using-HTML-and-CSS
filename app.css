@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-width: 365px;
+    background-color: hsl(233, 47%, 7%);
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1440px;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px;
+}
+
+.content {
+    background-color: hsl(244, 38%, 16%);
+    line-height: 50px;
+    padding: 10px 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.image {
+    border-radius: 20px 20px 0 0;
+    background-color: hsl(277, 100%, 48%);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.6;
+    vertical-align: bottom;
+}
+
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+    margin: 25px;
+    padding-top: 25px 15px 0 15px;
+}
+
+.list {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+.list .items {
+    margin: 10px 0 10px 0;
+}
+
+.list .items h1 {
+    font-size: 30px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.list .items p {
+    margin:0;
+    padding-top: 0px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+    font-weight: bold;
+}
+
+p {
+    padding: 20px;
+    line-height: 25px;
+}
+
+
+@media (min-width:720px){
+    body {
+        max-height: 800px;
+    }
+    .container{
+        flex-direction: row-reverse;
+        padding:auto;
+        margin: auto;
+        max-width: 75%;
+        text-align:left;
+    }
+
+    .content {
+        display: block;
+        width: 50%;
+        border-radius:  20px 0px 0 20px;
+        line-height: 20px;
+        flex-wrap: wrap;
+    }
+
+    .content p {
+        /* margin: 25px; */
+        margin: 25px 25px 10px 25px;
+        /* margin-bottom: 10px; */
+        padding: 25px 30px 0px 20px;
+        width: 70%;
+    }
+    
+    .image {
+        width: 50%;
+        border-radius: 0 20px 20px 0;
+    }
+
+    img {
+        border-radius: 0 20px 20px 0;
+        width:100%;
+        height: 100%;
+    }
+
+    h1 {
+        padding: 35px 40px 10px 20px;
+        line-height: 45px;
+        width: 70%;
+    }
+    
+    .list {
+        padding: 25px 0px 10px 20px;
+        margin-bottom: 25px;
+    }
+
+    .list .items{
+        text-align: center;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .attribution {
+        text-align: left;
+        padding-left: 45px;
+    }
+    
+}
